@@ -1,0 +1,187 @@
+/* Polices */
+@font-face {
+    font-family: 'theblacklist';
+    src: url("../src/theblacklist.ttf");
+}
+/* Custom styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #F4F7F6;
+    margin:0;
+}
+
+header, section, footer {
+    text-align:center;
+}
+
+header {
+    background-color: #1D1D1D;
+    color: #fff;
+    padding-bottom:30px;
+}
+
+nav {
+    text-align:center;
+    background-color:white;
+    box-shadow: 0px 3px 1px -1px rgba(0,0,0,0.5);
+    font-size:1.1em;
+    padding:15px;
+}
+
+section {
+}
+
+footer {
+    margin:0 auto;
+    background-color: #1D1D1D;
+    color:#fff;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'theblacklist', 'Arial', sans-serif;
+    margin-top:0;
+    padding-top:30px;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    margin:auto;
+}
+
+h2, h3 {
+    font-size:1.5em;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3::before {
+    padding: 0.2em;
+    content:"«";
+    color:grey;
+}
+
+h3::after {
+    padding: 0.2em;
+    content: "»";
+    color:grey;
+}
+
+
+ul {
+    padding: 0px;
+    display:inline;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 10px;
+    display:inline;
+}
+
+ul li a {
+    text-decoration:none;
+    color: #1D1D1D;
+}
+
+ul li:hover {
+    font-weight:bold;
+}
+
+#logo {
+    margin-top:30px;
+    width:50px;
+}
+
+#contact {
+    padding: 30px;
+}
+
+#contact p {
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.conteneur {
+    width:80%;
+    margin:auto;
+}
+
+#picture-project {
+    margin-top:50px;
+}
+
+#picture-project img, #picture-project video {
+    width: 70%;
+}
+
+.separator {
+    display: block;
+    height: 1px;
+    width:40px;
+    margin:15px auto;
+    background-color:#999;
+}
+
+.projets {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.projet {
+    width:400px;
+    margin:30px;
+    display:inline-block;
+    background-color:#fff;
+    padding-bottom:15px;
+    border: 0px solid #000;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.projet:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.projet a {
+    text-decoration:none;
+    color:#1D1D1D;
+}
+
+.projet img {
+    min-width:400px;
+    height:266px;
+}
+
+.projet span {
+    display:block;
+    text-transform: uppercase;
+}
+
+.projet .date-projet {
+    font-size:0.7em;
+}
+
+.projet .picture {
+    width:400px;
+    height:266px;
+    margin-bottom:15px;
+    overflow: hidden;
+}
+
+/* MEDIA */
+@media all and (max-width: 1000px){
+	.projet { width: 100%; margin: 15px auto; }
+	.projet img { width: 100%; min-width: auto; height: auto; }
+	.projet .picture { width: 100%; height: auto; }
+	header h2 { width: 90%; }
+}
+

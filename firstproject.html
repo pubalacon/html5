@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <!-- En-tête -->
+    <!-- Commentaire Ctrl+K+C sous Visual Code -->
+    <!-- Raccourci pour indenter Alt+Shift+F -->
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="design/default.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Code -->
+    <header>
+        <h1>John DOE</h1>
+        <span class="separator"></span>
+        <h2>Mon premier projet</h2>
+        <img src="pictures\logo.png" alt="Logo" id="logo" />
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Page d'accueil">Accueil</a></li>
+            <li><a href="#picture-project" title="Production">Production</a></li>
+            <li><a href="#contact" title="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteneur">
+
+        <section>
+            <h3>Introduction</h3>
+            <p>
+                Ceci est mon premier projet
+            </p>
+        </section>
+
+        <section id="picture-project">
+            <h3>Production</h3>
+            <video controls poster="pictures/presentation.jpg" width="70%" autoplay muted>
+                <source src="pictures/presentation-mycoach.mp4" type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <img src="pictures/presentation.jpg" alt="Vidéo de présentation" />
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+            <p>Vous pouvez me contacter sur <a href="mailto:heinrich.olivier@iform.fr"
+                    title="Me contacter">john.doe@abuse.org</a></p>
+        </section>
+
+
+    </div>
+
+    <footer>
+        &copy; <em>OH&CO</em> 2019
+    </footer>
+</body>
+
+</html>
