@@ -128,12 +128,6 @@ ul li:hover {
     background-color:#999;
 }
 
-.projets {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-}
-
 .projet {
     width:400px;
     margin:30px;
@@ -175,6 +169,13 @@ ul li:hover {
     height:266px;
     margin-bottom:15px;
     overflow: hidden;
+}
+
+.carousel {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.carousel .carousel-caption h5 {
+    color: #000;
 }
 
 /* MEDIA */

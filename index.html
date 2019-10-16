@@ -9,6 +9,8 @@
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="design/default.css" type="text/css" rel="stylesheet" />
 </head>
 
@@ -29,7 +31,7 @@
         </ul>
     </nav>
 
-    <div class="conteneur">
+    <div class="container">
         <section>
             <h3>Bienvenue</h3>
             <p>Ceci est le cours HTML5 / CSS3 / BOOTSTRAP</p>
@@ -39,74 +41,191 @@
             <h3>Projets</h3>
 
             <!-- Conteneur Projets -->
-            <div class="projets">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <!-- Item Projet 1 -->
+                        <div class="projet">
+                            <div class="picture">
+                                <img src="pictures/illustration_1.png">
+                            </div>
+                            <span>Projet 1</span>
+                            <span class="date-projet">15/10/2019</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#myModal">
+                                Voir le projet
+                            </button>
 
-                <!-- Item Projet 1 -->
-                <div class="projet">
-                    <a href="firstproject.html">
-                        <div class="picture">
-                            <img src="pictures/illustration_1.png">
                         </div>
-                        <span>Le titre du Projet 1</span>
-                        <span class="date-projet">15/10/2019</span>
-                    </a>
+
+                        <!-- Item Projet 2 -->
+                        <div class="projet">
+                            <div class="picture">
+                                <img src="pictures/illustration_2.jpg">
+                            </div>
+                            <span>Projet 2</span>
+                            <span class="date-projet">15/10/2019</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#myModal">
+                                Voir le projet
+                            </button>
+
+                        </div>
+
+                        <!-- Item Projet 3 -->
+                        <div class="projet">
+                            <div class="picture">
+                                <img src="pictures/illustration_3.jpg">
+                            </div>
+                            <span>Projet 3</span>
+                            <span class="date-projet">15/10/2019</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#myModal">
+                                Voir le projet
+                            </button>
+                        </div>
+
+                        <!-- Item Projet 4 -->
+                        <div class="projet">
+                            <div class="picture">
+                                <img src="pictures/illustration_4.jpg">
+                            </div>
+                            <span>Projet 4</span>
+                            <span class="date-projet">15/10/2019</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#myModal">
+                                Voir le projet
+                            </button>
+                        </div>
+
+                        <!-- Item Projet 5 -->
+                        <div class="projet">
+                            <div class="picture">
+                                <img src="pictures/illustration_5.jpg">
+                            </div>
+                            <span>Projet 5</span>
+                            <span class="date-projet">15/10/2019</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#myModal">
+                                Voir le projet
+                            </button>
+
+                        </div>
+
+                        <!-- Item Projet 6 -->
+                        <div class="projet">
+                            <div class="picture">
+                                <img src="pictures/illustration_6.jpg">
+                            </div>
+                            <span>Projet 6</span>
+                            <span class="date-projet">15/10/2019</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#myModal">
+                                Voir le projet
+                            </button>
+
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Item Projet 2 -->
-                <div class="projet">
-                    <a href="firstproject.html">
-                        <div class="picture">
-                            <img src="pictures/illustration_2.jpg">
-                        </div>
-                        <span>Le titre du Projet 2</span>
-                        <span class="date-projet">15/10/2019</span>
-                    </a>
-                </div>
+                <h3>Carousel</h3>
+                
+                <div class="row">
+                    <div class="col-6 offset-3">
 
-                <!-- Item Projet 3 -->
-                <div class="projet">
-                    <a href="firstproject.html">
-                        <div class="picture">
-                            <img src="pictures/illustration_3.jpg">
+                        <div class="carousel">
+                            <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselCaptions" data-slide-to="4"></li>
+                                    <li data-target="#carouselCaptions" data-slide-to="5"></li>
+                                    <li data-target="#carouselCaptions" data-slide-to="6"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="pictures/illustration_1.png" class="d-block w-100" alt="projet 1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Projet 1</h5>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#myModal">
+                                                Voir le projet
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="pictures/illustration_2.jpg" class="d-block w-100" alt="projet 2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Projet 2</h5>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#myModal">
+                                                Voir le projet
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="pictures/illustration_3.jpg" class="d-block w-100" alt="projet 3">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Projet 3</h5>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#myModal">
+                                                Voir le projet
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="pictures/illustration_4.jpg" class="d-block w-100" alt="projet 4">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Projet 4</h5>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#myModal">
+                                                Voir le projet
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="pictures/illustration_5.jpg" class="d-block w-100" alt="projet 5">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Projet 5</h5>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#myModal">
+                                                Voir le projet
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="pictures/illustration_6.jpg" class="d-block w-100" alt="projet 6">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Projet 6</h5>
+                                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#myModal">
+                                                Voir le projet
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselCaptions" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselCaptions" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
                         </div>
-                        <span>Le titre du Projet 3</span>
-                        <span class="date-projet">15/10/2019</span>
-                    </a>
-                </div>
 
-                <!-- Item Projet 4 -->
-                <div class="projet">
-                    <a href="firstproject.html">
-                        <div class="picture">
-                            <img src="pictures/illustration_4.jpg">
-                        </div>
-                        <span>Le titre du Projet 4</span>
-                        <span class="date-projet">15/10/2019</span>
-                    </a>
+                    </div>
                 </div>
-
-                <!-- Item Projet 5 -->
-                <div class="projet">
-                    <a href="firstproject.html">
-                        <div class="picture">
-                            <img src="pictures/illustration_5.jpg">
-                        </div>
-                        <span>Le titre du Projet 5</span>
-                        <span class="date-projet">15/10/2019</span>
-                    </a>
-                </div>
-
-                <!-- Item Projet 1 -->
-                <div class="projet">
-                    <a href="firstproject.html">
-                        <div class="picture">
-                            <img src="pictures/illustration_6.jpg">
-                        </div>
-                        <span>Le titre du Projet 6</span>
-                        <span class="date-projet">15/10/2019</span>
-                    </a>
-                </div>
-
             </div>
 
         </section>
@@ -122,6 +241,54 @@
     <footer>
         &copy; <em>OH&CO</em> 2019
     </footer>
+
+    <!-- Modales -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modaleTitle1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modaleTitle1">Projet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ac ne quis a nobis hoc ita dici forte miretur, quod alia quaedam in hoc facultas sit ingeni,
+                        neque haec dicendi ratio aut disciplina, ne nos quidem huic uni studio penitus umquam dediti
+                        fuimus. Etenim omnes artes, quae ad humanitatem pertinent, habent quoddam commune vinculum, et
+                        quasi cognatione quadam inter se continentur.</p>
+
+                    <p>Iam in altera philosophiae parte. quae est quaerendi ac disserendi, quae logikh dicitur, iste
+                        vester plane, ut mihi quidem videtur, inermis ac nudus est. tollit definitiones, nihil de
+                        dividendo ac partiendo docet, non quo modo efficiatur concludaturque ratio tradit, non qua via
+                        captiosa solvantur ambigua distinguantur ostendit; iudicia rerum in sensibus ponit, quibus si
+                        semel aliquid falsi pro vero probatum sit, sublatum esse omne iudicium veri et falsi putat.</p>
+
+                    <p>Orientis vero limes in longum protentus et rectum ab Euphratis fluminis ripis ad usque supercilia
+                        porrigitur Nili, laeva Saracenis conterminans gentibus, dextra pelagi fragoribus patens, quam
+                        plagam Nicator Seleucus occupatam auxit magnum in modum, cum post Alexandri Macedonis obitum
+                        successorio iure teneret regna Persidis, efficaciae inpetrabilis rex, ut indicat cognomentum.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
