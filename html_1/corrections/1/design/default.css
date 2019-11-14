@@ -1,0 +1,68 @@
+body {
+	font-family: 'Roboto', sans-serif;
+    background-color: #F4F7F6;
+}
+
+header {
+    text-align: center;
+    background-color: #1D1D1D;
+    color: white;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'theblacklist', arial, sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+	font-weight: bold;
+}
+
+nav {
+	text-align: center;
+    background: white;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    background: #1D1D1D;
+    color: white;
+}
+
+#contact {
+	border: 1px black solid;
+	border-radius: 15px;
+}
+
+/* POLICES */
+@font-face {
+    font-family: 'theblacklist';
+    src: url('../src/theblacklist.ttf') format('truetype');
+}

@@ -1,0 +1,25 @@
+
+Compte GitHub.com: pubalacon@gmail.com/Azsqwx123
+install sur PC: https://www.git-scm.com/download/win
+
+http://www.netlify.com/
+
+https://formation-html-css-001.netlify.com/
+
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+https://flukeout.github.io/
+https://flexboxfroggy.com/#fr
+
+https://www.dafont.com/fr/
+https://fonts.google.com/
+
+https://codepen.io/sdthornton/pen/wBZdXq
+
+https://developer.mozilla.org/fr/docs/Web/CSS/Requ%C3%AAtes_m%C3%A9dia/Utiliser_les_Media_queries
+
+https://www.7-zip.org/a/7z1900-x64.exe
+
+https://getbootstrap.com/
+
+http://blog.mathieu-leplatre.info/git-annuler-proprement-un-commit-apres-un-push-fr.html
